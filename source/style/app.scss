@@ -64,14 +64,13 @@ input::-ms-clear {
   text-align: left;
 }
 
-@import "common/a__header";
-@import "common/b__history";
-@import "common/c__today";
-@import "common/d__feel";
-@import "common/e__effect";
-@import "common/f__expert";
-@import "common/g__reviews";
-@import "common/h__reciept";
+@import "common/a__";
+@import "common/b__";
+@import "common/c__";
+@import "common/d__";
+@import "common/e__";
+@import "common/f__";
+@import "common/g__";
 @import "common/popup.scss";
 @import "common/slick.scss";
 @import "common/slick-theme.scss";
