@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     postDate(/*'dateFormat', 'ru', false*/);   
 
 });
+let d = new Date(),
+    currentYear = document.querySelectorAll('.current-year');
+
+for(let i = 0; i < currentYear.length; i++) {
+    currentYear[i].innerHTML = d.getFullYear();
+}
 
 function postDate(sa, countryName, isAbbreviated) {
     // Додаємо клас "date-N", де N - кількість "відмотаних" днів.

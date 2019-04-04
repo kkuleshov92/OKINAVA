@@ -9,7 +9,7 @@ html, body {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   background-color: #fff;
   color: #000;
   font-size: 16px;
@@ -31,6 +31,20 @@ ul {
   padding: 0;
   margin: 0;
 }
+input::-ms-clear {
+  display: none;
+}
+
+
+
+//--------------------------------------------------COMMON STYLES
+
+//placeholders styles
+::-webkit-input-placeholder { color: #333333; font-size: 16px; }
+::-moz-placeholder          { color: #333333; font-size: 16px; } /* Firefox 19+ */
+:-moz-placeholder           { color: #333333; font-size: 16px; } /* Firefox 18- */
+:-ms-input-placeholder      { color: #333333; font-size: 16px; }
+
 .ib {
   display: inline-block;
 }
@@ -40,15 +54,6 @@ ul {
   max-width: 1170px;
   margin: 0 auto;
 }
-
-input::-ms-clear {
-  display: none;
-}
-
-::-webkit-input-placeholder { color: #333333; font-size: 16px; }
-::-moz-placeholder          { color: #333333; font-size: 16px; } /* Firefox 19+ */
-:-moz-placeholder           { color: #333333; font-size: 16px; } /* Firefox 18- */
-:-ms-input-placeholder      { color: #333333; font-size: 16px; }
 
 .title {
   font-size: 40px;
@@ -64,17 +69,10 @@ input::-ms-clear {
   text-align: left;
 }
 
+//--------------------------------------------------IMPORT PAGES
 @import "common/a__";
-@import "common/b__";
-@import "common/c__";
-@import "common/d__";
-@import "common/e__";
-@import "common/f__";
-@import "common/g__";
-@import "common/popup.scss";
-@import "common/slick.scss";
-@import "common/slick-theme.scss";
 
+//--------------------------------------------------MEDIA
 @media screen and (max-width: 1199px){
   .wrapper {
     width: 100%;

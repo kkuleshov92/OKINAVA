@@ -5,9 +5,8 @@ global.$ = {
   config: require('./gulp/config'),
   path: {
     task: require('./gulp/paths/tasks.js'),
-    jsFoundation: require('./gulp/paths/js.foundation.js'),
-    cssFoundation: require('./gulp/paths/css.foundation.js'),
-    app: require('./gulp/paths/app.js')
+    app: require('./gulp/paths/app.js'),
+    libs: require('./gulp/paths/libs.js')
   },
   gulp: require('gulp'),
   rimraf: require('rimraf'),
@@ -23,11 +22,11 @@ $.gulp.task('default', $.gulp.series(
   'clean',
   $.gulp.parallel(
     'sass',
+    'css:libs',
     'pug',
-    'js:foundation',
     'js:process',
-    'copy:image',
-    'css:foundation'
+    'js:libs',
+    'copy:image'
   ),
   $.gulp.parallel(
     'watch',
