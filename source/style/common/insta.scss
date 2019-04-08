@@ -1,24 +1,253 @@
 .insta {
-
+    background: url(../img/insta-bg.png) no-repeat left calc(50% - 651px) top 193px,
+    linear-gradient(to right, #fff 55%, #F8F8F8 55%);
+    position: relative;
+    .wrapper {
+        display: flex;
+    }
+    .title {
+        font-size: 40px;
+        margin-top: 50px;
+        text-align: left;
+        line-height: 1.05;
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 400px;
+            background: #88C524;
+            top: 67px;
+            left: 230px;
+        }
+        img {
+            margin-left: 15px;
+            position: relative;
+            top: 2px;
+        }
+    }
+    &__left {
+        width: 52%;
+        background: #FFF;
+    }
+    &__right {
+        width: 48%;
+        background: #F8F8F8;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 187px;
+        justify-content: flex-end;
+        padding-left: 50px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 173px;
+        height: 110px;
+        margin-left: 67px;
+        margin-bottom: 50px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    &__text {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 18px;
+        color: #232323;
+        margin-top: 18px;
+    }
+    &__imgs {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 36px;
+        position: relative;
+        &::after {
+            content: '';
+            height: 1px;
+            width: 2000px;
+            position: absolute;
+            left: -2030px;
+            top: -110px;
+            background: #88C524;
+        }
+    }
+    &__photo-link {
+        width: 182px;
+        height: 182px;
+        margin: 5px;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__btn {
+        width: 200px;
+        height: 55px;
+        border: 1px solid #6B6B6B;
+        background: transparent;
+        font-size: 14px;
+        color: #232323;
+        font-weight: 700;
+        margin-left: 234px;
+        display: block;
+        &:hover {
+            background: #232323;
+            color: #fff;
+        }
+    }
 }
 
 //-------------------------------MEDIA
-@media screen and (max-width: 1199px){
-
+@media screen and (max-width: 1199px) {
+    .insta {
+        background: url(../img/insta-bg.png) no-repeat left calc(50% - 563px) top 120px,
+        linear-gradient(to right, #fff 55%, #F8F8F8 55%);
+        &__photo-link {
+            width: 155px;
+            height: 155px;
+        }
+        &__list {
+            padding-left: 0;
+        }
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__item {
+            margin-left: 55px;
+            margin-bottom: 22px;
+        }
+        &__text {
+            margin-top: 5px;
+        }
+    }
 }
 
-@media screen and (max-width: 1023px){
-
+@media screen and (max-width: 1023px) {
+    .insta {
+        background: url(../img/insta-bg.png) no-repeat left calc(50% - 439px) top 189px,
+        linear-gradient(to right, #fff 55%, #F8F8F8 55%);
+        .title {
+            padding-left: 35px;
+            &::before {
+                left: 265px;
+            }
+        }
+        &__imgs {
+            justify-content: center;
+            &::after {
+                left: -1995px;
+            }
+        }
+        &__item {
+            margin: 0 0 19px;
+            align-items: center;
+            height: auto;
+        }
+        &__text {
+            text-align: center;
+            margin-top: 5px;
+        }
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
-@media screen and (max-width: 767px){
-
+@media screen and (max-width: 767px) {
+    .insta {
+        background: linear-gradient(to bottom, #fff 63%, #F8F8F8 63%);
+        .title {
+            width: 375px;
+            padding-left: 70px;
+            &::before {
+                display: none;
+            }
+        }
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left,
+        &__right {
+            width: 100%;
+        }
+        &__right {
+            margin-top: 21px;
+        }
+        &__list {
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__img {
+            margin-top: 20px;
+        }
+        &__item {
+            height: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &__imgs {
+            &::after {
+                left: -1950px;
+            }
+            &::before {
+                content: '';
+                height: 1px;
+                position: absolute;
+                width: 2000px;
+                right: -1675px;
+                top: -64px;
+                background: #88C524;
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 639px){
-
+@media screen and (max-width: 639px) {
+    .insta {
+        background: linear-gradient(to bottom, #fff 69%, #F8F8F8 69%);
+        &__imgs {
+            &::before {
+                right: -1835px;
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 479px){
-
+@media screen and (max-width: 479px) {
+    .insta {
+        background: linear-gradient(to bottom, #fff 55.4%, #F8F8F8 55.4%);
+        .title {
+            width: 100%;
+            padding-left: 0;
+        }
+        &__photo-link {
+            width: 140px;
+            height: 140px;
+        }
+        &__imgs {
+            margin-top: 10px;
+            &::before {
+                right: -1925px;
+                top: -39px;
+            }
+            &::after {
+                left: -2020px;
+                top: -83px;
+            }
+        }
+        &__item {
+            height: auto;
+        }
+    }
 }
