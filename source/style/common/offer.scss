@@ -1,19 +1,187 @@
 .offer {
+    padding-top: 119px;
+    padding-bottom: 120px;
     background: #232323;
-
+    .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__box {
+        width: 300px;
+    }
+    .title {
+        color: #CA507B;
+        font-size: 40px;
+        width: 270px;
+        text-align: left;
+        margin: 52px 10px 0px 0px;
+        line-height: 1.05;
+    }
+    &__link {
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 107px;
+        display: block;
+        letter-spacing: 1.4px;
+        img {
+            margin-left: 27px;
+            position: relative;
+            top: 2px;
+        }
+    }
+    &__stoc {
+        background: #FFDBDE url(../img/offer-stoc-bg.png)no-repeat left calc(50% + 123px) bottom;
+        width: 870px;
+        height: 360px;
+    }
 }
+
+.stoc {
+    position: relative;
+    padding-left: 69px;
+    display: flex;
+    &__number {
+        color: #CA507B;
+        font-size: 18px;
+        position: absolute;
+        right: 0px;
+        top: -28px;
+        background: #fff;
+        width: 170px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Geometria-Heavy';
+    }
+    &__left {
+        color: #232323;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Cormorant Garamond', serif;
+        margin-top: 214px;
+    }
+    &__text {
+        font-size: 14px;
+        margin-top: 19px;
+        line-height: 1.5;
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 50px;
+        padding-left: 22px;
+    }
+    &__btn-more {
+        color: #3F3F3F;
+        font-size: 14px;
+        margin: 0 15px;
+        width: 170px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-weight: 700;
+        background: rgba(255, 255, 255, .6);
+        transition: .3s;
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+    }
+    &__btn-sign {
+        background: #CA507B;
+        color: #fff;
+        margin: 0 15px;
+        font-size: 14px;
+        width: 170px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-weight: 700;
+    }
+}
+
+
 
 //-------------------------------MEDIA
 @media screen and (max-width: 1199px){
-
+    .stoc {
+        padding: 0 30px;
+        &__title {
+            margin-top: 202px;
+        }
+        &__text {
+            br {
+                display: none;
+            }
+        }
+        &__btns {
+            padding-left: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 1023px){
+    .offer {
+        padding-top: 68px;
+        padding-bottom: 40px;
+        &__box {
+            width: auto;
+        }
+        &__stoc {
+            width: auto;
+        }
+    }
+    .stoc {
+        flex-direction: column;
+        align-items: center;
+        background-size: 275px;
+        justify-content: space-between;
+        background-position: left calc(50%) bottom;
 
+        &__title {
+            margin-top: 40px;
+        }
+        &__number {
+        }
+        &__btns {
+            padding-bottom: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 767px){
-
+    .offer {
+        padding-top: 40px;
+        .title {
+            margin-top: 0;
+            width: 100%;
+            font-size: 35px;
+        }
+        &__link {
+            margin: 20px 0 30px;
+        }
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .stoc {
+        background-image: none;
+        height: auto;
+        &__btns {
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 639px){
@@ -21,5 +189,21 @@
 }
 
 @media screen and (max-width: 479px){
-
+    .stoc {
+        &__btns {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__btn-more {
+            margin: 5px;
+        }
+        &__btn-sign {
+            margin: 5px;
+        }
+    }
+    .offer {
+        &__link {
+            margin-bottom: 50px;
+        }
+    }
 }

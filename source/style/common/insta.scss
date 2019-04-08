@@ -35,6 +35,7 @@
     &__right {
         width: 48%;
         background: #F8F8F8;
+        padding-bottom: 119px;
     }
     &__list {
         display: flex;
@@ -83,8 +84,15 @@
         width: 182px;
         height: 182px;
         margin: 5px;
+        transition: .3s;
         img {
             max-width: 100%;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:active {
+            transform: scale(0.95);
         }
     }
     &__btn {
@@ -100,6 +108,7 @@
         &:hover {
             background: #232323;
             color: #fff;
+            border-color: #232323;
         }
     }
 }
@@ -136,6 +145,7 @@
         linear-gradient(to right, #fff 55%, #F8F8F8 55%);
         .title {
             padding-left: 35px;
+            margin-top: 40px;
             &::before {
                 left: 265px;
             }
@@ -158,13 +168,17 @@
         &__list {
             flex-direction: column;
             align-items: center;
+            margin-top: 177px;
+        }
+        &__right {
+            padding-bottom: 40px;
         }
     }
 }
 
 @media screen and (max-width: 767px) {
     .insta {
-        background: linear-gradient(to bottom, #fff 63%, #F8F8F8 63%);
+        background: linear-gradient(to bottom, #fff 59.7%, #F8F8F8 59.7%);
         .title {
             width: 375px;
             padding-left: 70px;
@@ -205,8 +219,8 @@
                 height: 1px;
                 position: absolute;
                 width: 2000px;
-                right: -1675px;
-                top: -64px;
+                right: -1660px;
+                top: -73px;
                 background: #88C524;
             }
         }
@@ -215,11 +229,17 @@
 
 @media screen and (max-width: 639px) {
     .insta {
-        background: linear-gradient(to bottom, #fff 69%, #F8F8F8 69%);
+        background: linear-gradient(to bottom, #fff 66.4%, #F8F8F8 66.4%);
         &__imgs {
             &::before {
                 right: -1835px;
             }
+        }
+        .title {
+            margin-top: 30px;
+        }
+        &__right {
+            padding-bottom: 30px;
         }
     }
 }
@@ -230,6 +250,7 @@
         .title {
             width: 100%;
             padding-left: 0;
+            margin-top: 25px;
         }
         &__photo-link {
             width: 140px;
@@ -248,6 +269,9 @@
         }
         &__item {
             height: auto;
+        }
+        &__right {
+            padding-bottom: 25px;
         }
     }
 }
