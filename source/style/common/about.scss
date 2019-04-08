@@ -2,6 +2,7 @@
     padding-top: 66px;
     color: #232323;
     overflow: hidden;
+    padding-bottom: 135px;
     .title {
         font-size: 48px;
         color: #232323;
@@ -151,16 +152,86 @@
         margin-top: 136px;
         font-size: 14px;
         padding-left: 200px;
+        padding-bottom: 65px;
     }
 }
 //-------------------------------MEDIA
 @media screen and (max-width: 1199px){
-
+    .about {
+        &__article {
+            padding-left: 104px;
+        }
+        &__text2 {
+            img {
+                left: -576px;
+            }
+        }
+        &__list-box {
+            padding-left: 65px;
+        }
+        &__list-img {
+            img {
+                width: 538px;
+                top: 0;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1023px){
-
+    .about {
+        .title {
+            width: 100%;
+            margin-top: 40px;
+        }
+        &__article {
+            padding-left: 0;
+            padding-top: 40px;
+        }
+        &__img {
+            img {
+                width: 310px;
+            }
+        }
+        &__text1 {
+            padding-bottom: 275px;
+            img {
+                left: 108px;
+            }
+        }
+        &__text2 {
+            padding-left: 375px;
+            padding-bottom: 30px;
+            img {
+                left: -375px;
+                top: -65px;
+            }
+        }
+        &__text3 {
+            padding-bottom: 40px;
+            img {
+                left: 68px;
+                top: 17px;
+            }
+        }
+        &__list-box {
+            margin-top: 60px;
+            padding-left: 0;
+        }
+        &__text-item {
+            width: 100%;
+        }
+        &__list-img {
+            img {
+                width: 378px;
+                top: 67px;
+                left: auto;
+                right: 0;
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width: 767px){
 
