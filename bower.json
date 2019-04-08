@@ -9,6 +9,7 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "swiper": "^4.5.0",
-    "wow": "^1.1.2"
+    "wow": "^1.1.2",
+    "slick-carousel": ",^1.8.1"
   }
 }
