@@ -1,8 +1,9 @@
 .header {
+  background-color: #f8f8f8;
   background-image: url('../img/header_bg.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right calc(50% - 592px) top;
+  background-position: right calc(50% - 589px) top;
   padding: 15px 0 0;
   position: relative;
 
@@ -146,22 +147,22 @@
   }
 
   &__photo-slider {
-    width: 426px;
+    width: 455px;
     position: absolute;
-    top: -88px;
+    top: -90px;
     right: -218px;
 
     .header__photo-slide {
       width: 100%;
 
       img {
-        max-width: 426px;width: 100%;
+        max-width: 455px;width: 100%;
       }
     }
   }
   .header-next-slide, .header-prev-slide {
     width: 31px;
-    height: 13px;
+    height: 12px;
     background: url("../img/slider_arrow.svg") no-repeat center center;
     cursor: pointer;
     position: absolute;
