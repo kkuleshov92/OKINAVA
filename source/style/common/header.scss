@@ -77,7 +77,8 @@
     top: -3px;
 
     &:hover {
-      color: #88c524;
+      color: #0d0d0d;
+      background: #88c524;
       border-color: #88c524;
     }
   }
@@ -135,6 +136,13 @@
     line-height: 54px;
     background: #88c524;
     border: none;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: #232323;
+      background: transparent;
+      border: 1px solid #b3b3b3;
+    }
   }
 
   &__photo-slider {
