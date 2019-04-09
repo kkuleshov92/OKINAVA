@@ -39,22 +39,22 @@
     margin-right: 26px;
     display: inline-block;
 
-    //&:hover {
-    //  background: #232323;
-    //  color: #fff;
-    //  border-color: #232323;
-    //}
+    &:hover {
+      border-color: transparent;
+      color: #fff;
+      background: #88C524;
+     }
 
     &-dark {
       background: #232323;
       color: #fff;
       border-color: #232323;
 
-      //&:hover {
-      //  border-color: #6B6B6B;
-      //  color: #232323;
-      //  background: transparent;
-      //}
+      &:hover {
+        border-color: transparent;
+        color: #232323;
+        background: #88C524;
+      }
     }
   }
 
