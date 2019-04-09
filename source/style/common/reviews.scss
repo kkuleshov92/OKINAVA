@@ -1,5 +1,153 @@
 .reviews {
 
+  .wrapper {
+    position: relative;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__btns {
+    position: relative;
+    top: -95px;
+    left: 471px;
+  }
+
+  &__btn {
+    width: 170px;
+    height: 55px;
+    border: 1px solid #6B6B6B;
+    background: transparent;
+    font-size: 14px;
+    color: #232323;
+    font-weight: 700;
+    margin-right: 26px;
+    display: inline-block;
+
+    //&:hover {
+    //  background: #232323;
+    //  color: #fff;
+    //  border-color: #232323;
+    //}
+
+    &-dark {
+      background: #232323;
+      color: #fff;
+      border-color: #232323;
+
+      //&:hover {
+      //  border-color: #6B6B6B;
+      //  color: #232323;
+      //  background: transparent;
+      //}
+    }
+  }
+
+  &__sliders {
+    display: flex;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 131px;
+      height: 358px;
+      background: url("../img/insta-bg.png");
+      position: absolute;
+      top: 47px;
+      right: 90px;
+    }
+  }
+
+  &__text-absolute {
+    color: #d9d9d9;
+    font-size: 110px;
+    font-weight: 800;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    position: absolute;
+    left: -296px;
+    top: 180px;
+    transform: rotate(-90deg);
+  }
+
+  &__photo-slider {
+    width: 400px;
+    margin-right: 70px;
+
+    &__slide {
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__text-slider {
+    padding-top: 37px;
+    width: 405px;
+  }
+
+  &__slide-title {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1.4px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url("../img/reviews-inst.png");
+      position: absolute;
+      right: 5px;
+      top: 4px;
+    }
+  }
+
+  &__slide-date {
+    color: #6b6b6b;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px solid #88c524;
+    padding-bottom: 24px;
+    margin-bottom: 35px;
+    letter-spacing: 0.36px;
+  }
+
+  &__slide-descr {
+    color: #232323;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.54px;
+    line-height: 26px;
+  }
+
+
+  .reviews-next-slide, .reviews-prev-slide {
+    width: 31px;
+    height: 12px;
+    background: url("../img/slider_arrow.svg") no-repeat center center;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    &:hover {
+      background: url("../img/slider_arrow-hover.svg") no-repeat 0 center;
+      transform: rotate(180deg);
+    }
+  }
+
+
 }
 
 //-------------------------------MEDIA
