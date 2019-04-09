@@ -234,7 +234,51 @@
 
 
 @media screen and (max-width: 767px){
-
+    .about {
+        &__article {
+            line-height: 1.4;
+        }
+        &__img {
+            img {
+                width: 255px;
+            }
+        }
+        &__text1 {
+            padding-bottom: 190px;
+            img {
+                left: 35px;
+            }
+        }
+        &__subbox {
+            p:first-child {
+                margin-bottom: 10px;
+            }
+        }
+        &__text-subtitle {
+            line-height: 1.1;
+        }
+        &__text2 {
+            padding-left: 300px;
+            img {
+                top: 9px;
+                left: -300px;
+            }
+        }
+        &__text3 {
+            .about__text2-box {
+                width: 330px;
+            }
+            img {
+                left: 35px;
+            }
+        }
+        &__list-img {
+            img {
+                width: 338px;
+                top: 107px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 639px){
