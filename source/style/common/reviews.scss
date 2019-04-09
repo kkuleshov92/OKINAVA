@@ -352,7 +352,7 @@
 
     &__pagination {
       right: 297px;
-      top: 377px;
+      top: 373px;
     }
 
     &__slide-date {
@@ -419,8 +419,8 @@
     }
 
     &__pagination {
-      right: 427px;
-      top: 277px;
+      right: 419px;
+      top: 271px;
     }
 
     &__slide-date {
@@ -431,5 +431,57 @@
 }
 
 @media screen and (max-width: 479px){
+  .reviews {
+    .title {
+      margin-bottom: 0;
+    }
+    &__sliders {
+      flex-direction: column;
+    }
 
+    &__photo-slider {
+      width: 100%;
+      margin: 0 auto 10px;
+      padding-top: 0;
+      .reviews__photo-slide {
+        img {
+          width: 100%;
+          max-width: 320px;
+        }
+      }
+    }
+
+    &__text-slider {
+      width: 240px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__slide-title {
+
+      &::before {
+        display: none;
+      }
+    }
+    .reviews-next-slide {
+      top: 12px;
+      left: 236px;
+    }
+
+    .reviews-prev-slide {
+      top: 12px;
+      left: -29px;
+    }
+
+
+    &__btn {
+      width: 144px;
+
+      &:first-child {
+        margin-right: 7px;
+      }
+    }
+    .header__pagination {
+      display: none;
+    }
+  }
 }
