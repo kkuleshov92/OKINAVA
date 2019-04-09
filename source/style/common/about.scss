@@ -180,6 +180,8 @@
 
 @media screen and (max-width: 1023px){
     .about {
+        padding-top: 40px;
+        padding-bottom: 40px;
         .title {
             width: 100%;
             margin-top: 40px;
@@ -217,6 +219,7 @@
         &__list-box {
             margin-top: 60px;
             padding-left: 0;
+            padding-bottom: 40px;
         }
         &__text-item {
             width: 100%;
@@ -278,11 +281,16 @@
                 top: 107px;
             }
         }
+        &__list-box {
+            padding-bottom: 30px;
+        }
     }
 }
 
 @media screen and (max-width: 639px){
     .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
         &__article {
             padding-top: 0;
         }
@@ -330,6 +338,7 @@
             margin-top: 30px;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 0;
         }
         &__list {
             margin-top: 20px;
@@ -346,6 +355,8 @@
 
 @media screen and (max-width: 479px){
     .about {
+        padding-top: 25px;
+        padding-bottom: 25px;
         &__img {
             img {
                 width: 100%;
