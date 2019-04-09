@@ -153,34 +153,34 @@ input::-ms-clear {
 @media (max-width: 1023px){
   .wrapper {
     max-width: 768px;
-  }
-  .title {
-    font-size: 36px;
+    .title {
+      font-size: 36px;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .wrapper {
     max-width: 640px;
-  }
-  .title {
-    font-size: 34px;
+    .title {
+      font-size: 34px;
+    }
   }
 }
 
 @media (max-width: 639px) {
   .wrapper {
     max-width: 480px;
-  }
-  .title {
-    font-size: 32px;
+    .title {
+      font-size: 32px;
+    }
   }
 }
 @media (max-width: 479px) {
   .wrapper {
     max-width: 320px;
-  }
-  .title {
-    font-size: 30px;
+    .title {
+      font-size: 30px;
+    }
   }
 }
