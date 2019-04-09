@@ -51,9 +51,9 @@
     cursor: pointer;
 
       &:hover {
-        border-color: #6B6B6B;
+        border-color: transparent;
         color: #232323;
-        background: transparent;
+        background: #88C524;
       }
   }
   &__content {

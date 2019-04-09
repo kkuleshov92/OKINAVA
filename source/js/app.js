@@ -66,3 +66,14 @@ $('.reviews__text-slider').slick({
     asNavFor: '.reviews__photo-slider',
     adaptiveHeight: true
 });
+
+
+$('.team__right').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    variableWidth: true,
+    prevArrow: '<div class="team-prev-slide"></div>',
+    nextArrow: '<div class="team-next-slide"></div>',
+    adaptiveHeight: true
+});
