@@ -1,5 +1,5 @@
 .reviews {
-  padding: 76px 0 0;
+  padding: 108px 0 102px 197px;
 
   .wrapper {
     position: relative;
@@ -12,7 +12,7 @@
       background: #88C524;
       position: absolute;
       top: 23px;
-      left: -87%;
+      left: -1020px;
     }
   }
 
@@ -173,6 +173,7 @@
   &__pagination {
     display: inline-block;
     position: absolute;
+    font-size: 14px;
     top: 19px;
     right: 230px;
   }
