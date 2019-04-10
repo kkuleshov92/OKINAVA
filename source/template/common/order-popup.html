@@ -1,6 +1,6 @@
 <div class="order-box">
     <div class="order">
-        <div class="order__close"></div>
+        <div class="close-btn"></div>
         <div class="order__left">
             <div class="order__title">
                 Заказать звонок
@@ -10,29 +10,52 @@
                 <br>свяжется с Вами в ближайшее время
             </div>
             <form action="" class="order__form">
-                <input type="text" class="order__input order__input_text" placeholder="Ваше Имя*">
-                <input type="tel" class="order__input order__input_tel" placeholder="Ваш телефон*">
-                <select name="" id="" class="order__select">
-                    <option value="">Все услуги</option>
-                    <option value="">Для лица</option>
-                    <option value="">Для тела</option>
-                    <option value="">Для волос</option>
-                    <option value="">Для ногтей</option>
-                </select>
-                <div class="order__bottom">
-                    <button class="order__btn">
-                        <span>Заказать</span>
-                    </button>
-                    <p class="order__polit">
-                        Нажимая на кнопку вы соглашаетесь с условиями обработки ваших <a href="" target="_blank">персональных данных</a>
-                    </p>
+                <div class="order__input-box1">
+                    <input type="text" value="" class="order__input order__input_text" placeholder="Ваше Имя*">
+                    <span class="order__alarm">
+                        Обязательно поле *
+                    </span>
                 </div>
-
-
+                <div class="order__input-box2">
+                    <input type="tel" value="" class="order__input order__input_tel" placeholder="Ваш телефон*">
+                    <span class="order__alarm">
+                        Обязательно поле *
+                    </span>
+                </div>
+                <select class="order__select">
+                    <option value="Все услуги">Все услуги</option>
+                    <option value="Для лица">Для лица</option>
+                    <option value="Для тела">Для тела</option>
+                    <option value="Для волос">Для волос</option>
+                    <option value="Для ногтей">Для ногтей</option>
+                </select>
             </form>
+            <div class="order__bottom">
+                <button class="order__btn">
+                    <span>Заказать</span>
+                </button>
+                <p class="order__polit">
+                    Нажимая на кнопку вы соглашаетесь с условиями обработки ваших <a href="" target="_blank">персональных данных</a>
+                </p>
+            </div>
         </div>
         <div class="order__right">
             <img src="img/order-bg.png" alt="woman">
         </div>
+    </div>
+</div>
+<div class="thanks-box">
+    <div class="thanks">
+        <div class="close-btn"></div>
+        <h3 class="thanks__title">
+            Спасибо!
+        </h3>
+        <p class="thanks__text">
+            Ваша заявка принята и находится в обработке! Ожидайте звонка, наш специалист
+            <br>скоро с Вами свяжется.
+        </p>
+        <button class="order__btn thanks__btn">
+            <span>На главную</span>
+        </button>
     </div>
 </div>
