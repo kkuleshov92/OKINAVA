@@ -1,0 +1,151 @@
+.contact {
+    background: #F8F8F8;
+    padding-top: 120px;
+    padding-bottom: 255px;
+    overflow: hidden;
+    .wrapper {
+        display: flex;
+    }
+    &__map {
+        position: relative;
+        width: 50%;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 30px;
+            background: #88C524;
+            height: 520px;
+            width: 30px;
+        }
+        iframe {
+            position: absolute;
+            left: -410px;
+        }
+    }
+    &__addresses {
+        color: #232323;
+        width: 50%;
+        padding-top: 156px;
+        padding-left: 113px;
+        position: relative;
+        &::before {
+            content: '';
+            background: #88C524;
+            width: 2000px;
+            height: 1px;
+            position: absolute;
+            top: 185px;
+            right: -1840px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .title {
+        font-size: 40px;
+        text-align: left;
+    }
+    &__phone {
+        font-size: 16px;
+        margin-top: 44px;
+    }
+    &__house {
+        margin-top: 30px;
+    }
+    &__time {
+        margin-top: 31px;
+    }
+    p {
+        span {
+            font-weight: 900;
+        }
+    }
+    &__link {
+        margin-top: 56px;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
+//-------------------------------MEDIA
+@media screen and (max-width: 1199px){
+    .contact {
+        &__addresses {
+            &::before {
+                right: -1925px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .wrapper {
+            flex-direction: column;
+        }
+        &__map {
+            width: 100%;
+            order: 1;
+            &::before {
+                display: none;
+            }
+            iframe {
+                position: static;
+                width: 100%;
+                height: 400px;
+            }
+        }
+        &__addresses {
+            padding: 0;
+            width: 100%;
+            margin-bottom: 30px;
+            &::before {
+                display: none;
+            }
+        }
+        &__phone {
+            margin-top: 20px;
+        }
+        &__link {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .contact {
+        &__map {
+            iframe {
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px){
+    .contact {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__house,
+        &__time,
+        &__phone,
+        &__link {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 479px){
+    .contact {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        p {
+            span {
+                display: block;
+            }
+        }
+    }
+}

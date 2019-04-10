@@ -126,6 +126,8 @@ input::-ms-clear {
 
 
 //--------------------------------------------------IMPORT PAGES
+
+//index page
 @import "common/header";
 @import "common/services";
 @import "common/reviews";
@@ -138,7 +140,22 @@ input::-ms-clear {
 @import "common/footer";
 @import "common/order-popup";
 
+//about page
 @import "common/about/header";
+@import "common/about/director";
+@import "common/about/staff";
+@import "common/about/insta";
+@import "common/about/contact";
+@import "common/about/footer";
+
+//nails page
+@import "common/nails/header";
+@import "common/nails/prices";
+@import "common/nails/team";
+@import "common/nails/office";
+@import "common/nails/footer";
+
+
 
 //--------------------------------------------------MEDIA
 @media screen and (max-width: 1199px){
