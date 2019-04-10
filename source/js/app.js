@@ -77,3 +77,12 @@ $('.team__right').slick({
     nextArrow: '<div class="team-next-slide"></div>',
     adaptiveHeight: true
 });
+
+
+$('.order__close').click(function(){
+   $('.order-box').fadeOut();
+});
+
+$('.order-call').click(function(){
+   $('.order-box').fadeIn();
+});
