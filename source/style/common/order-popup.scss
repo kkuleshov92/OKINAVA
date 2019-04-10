@@ -8,6 +8,7 @@
     left: 0;
     z-index: 10;
 }
+
 .order {
     width: 1030px;
     height: 550px;
@@ -19,6 +20,32 @@
     background: #3A3A3A;
     justify-content: space-between;
     position: absolute;
+    &__close {
+        width: 38px;
+        height: 38px;
+        background: #fff;
+        position: absolute;
+        top: -19px;
+        right: -19px;
+        cursor: pointer;
+        &::before,
+        &::after {
+            content:'';
+            background: #0d0d0d;
+            width: 34px;
+            height: 3px;
+            display: block;
+            position: absolute;
+            top: 18px;
+            left: 2px;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
     &__left {
         margin-left: 60px;
         padding-top: 47px;
@@ -40,7 +67,7 @@
         flex-direction: column;
     }
     &__select {
-        background: transparent;
+        background: transparent url(../img/popup-arrow.svg)no-repeat right 14px top 7px;
         border: none;
         border-bottom: 1px solid #CA507B;
         color: #BBBBBB;
@@ -49,8 +76,16 @@
         padding-left: 12px;
         font-style: italic;
         font-family: "Cormorant Garamond", serif;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:focus {
+            background: transparent url(../img/popup-arrow-active.svg)no-repeat right 14px top 7px;
+        }
         option {
-            background: transparent;
+            background: #232323;
+            cursor: pointer;
         }
     }
     &__input {
@@ -75,5 +110,34 @@
     &__input_tel {
         margin-top: 34px;
     }
-
+    &__bottom {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__btn {
+        font-size: 14px;
+        background: #CA507B;
+        width: 200px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        &:hover {
+            background: #ff1668;
+        }
+    }
+    &__polit {
+        font-size: 12px;
+        margin-top: 7px;
+        margin-left: 30px;
+        width: 235px;
+        line-height: 1.2;
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
