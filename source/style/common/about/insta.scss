@@ -2,7 +2,6 @@
     background: url(../img/insta-bg.png) no-repeat left calc(50% - 651px) top 193px,
     linear-gradient(to right, #fff 55%, #F8F8F8 55%);
     position: relative;
-    padding: 65px 0 0;
     .wrapper {
         display: flex;
     }
@@ -32,11 +31,13 @@
     &__left {
         width: 52%;
         background: #FFF;
+        padding-top: 68px;
     }
     &__right {
         width: 48%;
         background: #F8F8F8;
         padding-bottom: 119px;
+        padding-top: 68px;
     }
     &__list {
         display: flex;
