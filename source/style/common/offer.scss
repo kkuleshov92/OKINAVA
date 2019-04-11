@@ -25,10 +25,22 @@
         margin-top: 107px;
         display: block;
         letter-spacing: 1.4px;
+        .offer__link-img2 {
+            display: none;
+        }
         img {
             margin-left: 27px;
             position: relative;
             top: 2px;
+        }
+        &:hover {
+            color: #88C524;
+            .offer__link-img2 {
+                display: inline;
+            }
+            .offer__link-img1 {
+                display: none;
+            }
         }
     }
     &__stoc {
@@ -54,7 +66,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Geometria-Heavy';
+        font-weight: 900;
     }
     &__left {
         color: #232323;

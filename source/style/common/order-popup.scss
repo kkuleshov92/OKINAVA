@@ -206,6 +206,13 @@
     &::after {
         transform: rotate(-45deg);
     }
+    &:hover {
+        background: #0d0d0d;
+        &::before,
+        &::after {
+            background: #fff;
+        }
+    }
 }
 
 
