@@ -94,11 +94,31 @@ $('.about-team__right').slick({
 $('.close-btn').click(function(){
     $('.order-box').fadeOut();
     $('.thanks-box').fadeOut();
+    $('.extra-wrapper').css('position','inherit');
+});
+
+$('.master__close-btn').click(function(){
+    $('.master-popup').fadeOut();
+    $('.extra-wrapper').css('position','inherit');
+});
+
+$('.team__slide').click(function(){
+    $('.master-popup').fadeIn();
+    $('.extra-wrapper').css('position','fixed');
 });
 
 $('.order-call').click(function(){
     $('.order-box').fadeIn();
+    $('.extra-wrapper').css('position','fixed');
 });
+
+$('.thanks__btn').click(function(){
+    $('.thanks-box').fadeOut();
+    $('.extra-wrapper').css('position','inherit');
+});
+
+
+
 
 
 
@@ -149,8 +169,9 @@ $(document).ready(function() {
 $(".order__input_tel").mask("+7(999)999-99-99");
 
 
+
 //-----------------------------------order-btn
-$('.order__btn').click(function(){
+$('.order__btn_go').click(function(){
     let a = $('.order__input_text');
     let b = $('.order__input_tel');
     if(a.val() && b.val()) {
@@ -165,13 +186,13 @@ $('.order__btn').click(function(){
     }
 });
 
+
+
 $('.order__input').click(function(){
     $(this).parent().removeClass('alarm');
 });
 
-$('.thanks__btn').click(function(){
-    $('.thanks-box').fadeOut();
-});
+
 
 
 
