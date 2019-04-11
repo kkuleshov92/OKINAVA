@@ -1,0 +1,122 @@
+.services-main {
+    color: #232323;
+    .wrapper {
+        position: relative;
+    }
+    &__back-link {
+        position: absolute;
+        top: 130px;
+        left: 7px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: #6F6F6F;
+        display: flex;
+        z-index: 1;
+        .services-main__back2 {
+            display: none;
+        }
+        &:hover {
+            color: #88C524;
+            .services-main__back2 {
+                display: block;
+            }
+            .services-main__back1 {
+                display: none;
+            }
+        }
+        img {
+            margin-right: 29px;
+        }
+    }
+    .header__btn-promo {
+        text-align: center;
+        cursor: pointer;
+        margin-left: 74px;
+        margin-top: 20px;
+    }
+    &__content {
+        padding-left: 556px;
+        padding-top: 117px;
+    }
+    &__title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 40px;
+        letter-spacing: 0.03em;
+        width: 100%;
+        z-index: 1;
+    }
+    &__price {
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 700;
+        font-family: 'Cormorant Garamond', serif;
+        margin-top: 20px;
+        z-index: 1;
+    }
+    &__name {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__pic {
+        position: relative;
+        img {
+            position: absolute;
+            left: 208px;
+            top: 20px;
+        }
+    }
+    &__text {
+        font-size: 14px;
+    }
+    &__subname {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 14px;
+    }
+    &__par {
+        margin-top: 21px;
+        line-height: 22px;
+    }
+    &__text_first {
+        width: 370px;
+        margin-top: 76px;
+        margin-left: 51px;
+        position: relative;
+        border-bottom: 1px solid #6F6F6F;
+        padding-bottom: 14px;
+        &::after {
+            content:'';
+            width: 1px;
+            height: 467px;
+            background: #88C524;
+            position: absolute;
+            left: -43px;
+            top: -46px;
+            z-index: 1;
+        }
+    }
+    &__text_kinds {
+        width: 420px;
+        margin-top: 35px;
+        padding-left: 52px;
+        line-height: 22px;
+    }
+    &__kind-item {
+        display: flex;
+        margin-top: 15px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #E7E7E7;
+        .services-main__par {
+            margin-top: 0;
+        }
+        &_last {
+            border-color: #6F6F6F;
+        }
+    }
+    &__kind-name {
+        color: #C4C4C4;
+        min-width: 100px;
+    }
+}
