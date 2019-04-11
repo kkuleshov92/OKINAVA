@@ -1,0 +1,136 @@
+.prices {
+  padding: 105px 0;
+
+  &__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    color: #232323;
+    position: relative;
+    
+    &::before {
+      content: '';
+      display: block;
+      width: 1000px;
+      height: 1px;
+      background: #88C524;
+      position: absolute;
+      top: 20px;
+      left: -1025px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: auto;
+  }
+
+  &__right {
+    width: 900px;
+  }
+
+  &__row-top {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 220px 8px 30px;
+    .col-service, .col-price {
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .col-service {
+    }
+  }
+
+  &__row {
+    padding: 7px 30px 6px;
+    border: 1px solid #E7E7E7;
+    border-top: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .col-service, .col-price {
+      font-family: 'Cormorant Garamond' ,serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: normal;
+      color: #232323;
+      display: inline-block;
+    }
+    .col-service {
+      width: 50%;
+    }
+    .col-price {
+      font-weight: 600;
+      margin-left: 115px;
+    }
+    .col__link {
+      font-size: 12px;
+      line-height: 68px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #88C524;
+      position: absolute;
+      left: 330px;
+      top: -6px;
+      display: none;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 39px;
+        height: 13px;
+        background: url("../img/slider_arrow-hover.svg") no-repeat center center;
+        position: absolute;
+        left: 95px;
+        top: 25px;
+      }
+    }
+    .col-order {
+      font-size: 12px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 14px;
+      color: #232323;
+      background: transparent;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(179, 179, 179);
+      border-image: initial;
+      padding: 12px 25px 10px;
+
+      &:hover {
+        background: #88C524;
+        font-weight: 700;
+      }
+    }
+
+    &:hover {
+      border-bottom-color: #88C524;
+      .col-service, .col-price {
+        color: #88C524;
+      }
+      .col__link {
+        display: block;
+      }
+      .col-order {
+        background: #88C524;
+        font-weight: 700;
+      }
+    }
+  }
+}
