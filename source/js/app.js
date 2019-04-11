@@ -193,8 +193,10 @@ $('.order__input').click(function(){
 });
 
 
-
-
-
-
-
+$('.office__left').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<div class="office-prev-slide"></div>',
+    nextArrow: '<div class="office-next-slide"></div>'
+});
