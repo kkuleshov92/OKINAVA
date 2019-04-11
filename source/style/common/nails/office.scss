@@ -1,0 +1,125 @@
+.office {
+  padding-bottom: 150px;
+  &__content {
+    display: flex;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 480px;
+      height: 406px;
+      background: #F8F8F8;
+      position: absolute;
+      z-index: 0;
+      right: -40px;
+      top: 184px;
+    }
+  }
+  &__left {
+    width: 1000px;
+    position: absolute;
+    top: 0;
+    left: -330px;
+    img {
+      width: 100%;
+    }
+  }
+  &__right {
+    position: absolute;
+    width: 370px;
+    right: 0;
+    top: 41px;
+    height: 370px;
+    z-index: 1;
+  }
+  &__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    color: #232323;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 570px;
+      height: 1px;
+      background: #CA507B;
+      position: absolute;
+      top: 20px;
+      left: -600px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #232323;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #232323;
+    margin-bottom: 20px;
+  }
+  .office-prev-slide, .office-next-slide {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    bottom: 43px;
+    right: 70px;
+    z-index: 2;
+    border: 1px solid #BBBBBB;
+    cursor: pointer;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 31px;
+      height: 10px;
+      background: url("../img/slider_arrow.svg") no-repeat center center;
+      position: absolute;
+      top: 9px;
+      left: -14px;
+      transform: rotate(180deg);
+    }
+  }
+  .office-prev-slide {
+    right: 140px;
+
+    &::before{
+      transform: rotate(0);
+      top: 9px;
+      left: 14px;
+    }
+    &:hover {
+      background: #88C524;
+      cursor: pointer;
+
+      &::before {
+        transform: rotate(180deg);
+        background: url("../img/black-arrow.svg") no-repeat center center;
+      }
+    }
+  }
+  .office-next-slide {
+    &:hover {
+      background: #88C524;
+      cursor: pointer;
+
+      &::before {
+        transform: rotate(0);
+        background: url("../img/black-arrow.svg") no-repeat center center;
+      }
+    }
+  }
+}

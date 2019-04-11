@@ -1,5 +1,16 @@
 .prices {
-  padding: 105px 0;
+  background: #F8F8F8;
+  &.first {
+    padding: 105px 0 103px;
+  }
+  &.last {
+    padding-bottom: 24px;
+  }
+  &.last-text {
+    padding-bottom: 75px;
+  }
+
+  padding-bottom: 100px;
 
   &__title {
     font-family: 'Cormorant Garamond', serif;
@@ -132,5 +143,22 @@
         font-weight: 700;
       }
     }
+  }
+  &__text-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #232323;
+    margin-bottom: 20px;
+    margin-top: 72px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #232323;
+    margin-bottom: 20px;
   }
 }
