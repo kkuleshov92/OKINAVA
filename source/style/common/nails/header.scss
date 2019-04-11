@@ -4,4 +4,10 @@
   .header__btn-phone, .header__number {
     color: #232323;
   }
+
+  .header__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
 }
