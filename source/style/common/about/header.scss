@@ -2,7 +2,11 @@
   padding-bottom: 140px;
   background-image: none;
   background-color: #F8F8F8;
-
+  .header__nav-phone {
+    .header__btn-phone, .header__number {
+      color: #fff;
+    }
+  }
   .header__top  {
     margin-bottom: 0;
   }
