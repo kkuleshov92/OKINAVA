@@ -10,12 +10,14 @@ html
         link(rel='stylesheet' href='css/app.css')
         link(rel='stylesheet' href='css/libs.min.css')
     body
-        include ../common/nails/header.html
-        include ../common/nails/prices.html
-        include ../common/nails/team.html
-        include ../common/nails/office.html
-        include ../common/nails/footer.html
+        .extra-wrapper
+            include ../common/nails/header.html
+            include ../common/nails/prices.html
+            include ../common/nails/team.html
+            include ../common/nails/office.html
+            include ../common/nails/footer.html
         include ../common/order-popup.html
+        include ../common/master-popup.html
 
         script(src='./js/libs.min.js')
         script(src='./js/app.js')
