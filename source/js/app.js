@@ -200,3 +200,60 @@ $('.office__left').slick({
     prevArrow: '<div class="office-prev-slide"></div>',
     nextArrow: '<div class="office-next-slide"></div>'
 });
+
+
+
+
+//---------------------------прилипание картинки услуги
+$(function() {
+    var $window = $(window);
+    var $sidebar = $(".services-main__pic");
+    var $sidebarTop = $sidebar.position().top;
+    var $sidebarHeight = $sidebar.height();
+    var $footer = $('.reviews');
+    var $footerTop = $footer.position().top;
+
+    $window.scroll(function(event) {
+        $sidebar.addClass("fixed");
+        var $scrollTop = $window.scrollTop();
+        var $topPosition = Math.max(0, $sidebarTop - $scrollTop);
+
+        if ($scrollTop + $sidebarHeight > $footerTop) {
+            var $topPosition = Math.min($topPosition, $footerTop - $scrollTop - $sidebarHeight);
+        }
+
+        $sidebar.css("top", $topPosition);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

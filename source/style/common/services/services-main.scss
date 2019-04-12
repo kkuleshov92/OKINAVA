@@ -60,11 +60,11 @@
         flex-wrap: wrap;
     }
     &__pic {
-        position: relative;
+        position: fixed;
+        top: 100px;
+        transition: .3s;
         img {
-            position: absolute;
-            left: 208px;
-            top: 20px;
+
         }
     }
     &__text {
