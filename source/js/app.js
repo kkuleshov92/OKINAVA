@@ -104,6 +104,7 @@ $('.master__close-btn').click(function(){
 
 $('.team__slide').click(function(){
     $('.master-popup').fadeIn();
+    $('html').scrollTop(0);
     $('.extra-wrapper').css('position','fixed');
 });
 
