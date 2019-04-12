@@ -211,7 +211,7 @@ $(function() {
     var $sidebar = $(".services-main__pic");
     var $sidebarTop = $sidebar.position().top;
     var $sidebarHeight = $sidebar.height();
-    var $footer = $('.reviews');
+    var $footer = $('.prices');
     var $footerTop = $footer.position().top;
 
     $window.scroll(function(event) {
