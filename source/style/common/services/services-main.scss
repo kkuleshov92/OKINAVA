@@ -1,5 +1,6 @@
 .services-main {
     color: #232323;
+    padding-bottom: 100px;
     .wrapper {
         position: relative;
     }
@@ -120,7 +121,9 @@
 }
 
 @media (max-width: 1199px){
+
     .services-main {
+        padding-bottom: 40px;
         &__pic {
             position: fixed;
             top: 80px;
@@ -141,6 +144,7 @@
 
 @media (max-width: 1023px){
     .services-main {
+
         &__back-link {
             top: 30px;
         }
@@ -160,6 +164,7 @@
 
 @media (max-width: 767px){
     .services-main {
+        padding-bottom: 30px;
         &__pic {
             width: 250px;
             left: calc(50% - 310px);
@@ -187,6 +192,7 @@
 
 @media (max-width: 639px){
     .services-main {
+        padding-bottom: 25px;
         .wrapper {
             flex-direction: column;
             align-items: center;

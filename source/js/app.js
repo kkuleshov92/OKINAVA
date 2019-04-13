@@ -206,26 +206,29 @@ $('.office__left').slick({
 
 
 //---------------------------прилипание картинки услуги
-$(function() {
-    var $window = $(window);
-    var $sidebar = $(".services-main__pic");
-    var $sidebarTop = $sidebar.position().top;
-    var $sidebarHeight = $sidebar.height();
-    var $footer = $('.prices');
-    var $footerTop = $footer.position().top;
+var url= window.location.href; // будет работать только на странице с адресом 'services.html'
+if(url.slice(-13) === 'services.html'){
+    $(function() {
+        var $window = $(window);
+        var $sidebar = $(".services-main__pic");
+        var $sidebarTop = $sidebar.position().top;
+        var $sidebarHeight = $sidebar.height();
+        var $footer = $('.stop');
+        var $footerTop = $footer.position().top;
 
-    $window.scroll(function(event) {
-        $sidebar.addClass("fixed");
-        var $scrollTop = $window.scrollTop();
-        var $topPosition = Math.max(0, $sidebarTop - $scrollTop);
+        $window.scroll(function(event) {
+            $sidebar.addClass("fixed");
+            var $scrollTop = $window.scrollTop();
+            var $topPosition = Math.max(0, $sidebarTop - $scrollTop);
 
-        if ($scrollTop + $sidebarHeight > $footerTop) {
-            var $topPosition = Math.min($topPosition, $footerTop - $scrollTop - $sidebarHeight);
-        }
+            if ($scrollTop + $sidebarHeight > $footerTop) {
+                var $topPosition = Math.min($topPosition, $footerTop - $scrollTop - $sidebarHeight);
+            }
 
-        $sidebar.css("top", $topPosition);
+            $sidebar.css("top", $topPosition);
+        });
     });
-});
+}
 
 
 
