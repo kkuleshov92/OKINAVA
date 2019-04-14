@@ -91,6 +91,7 @@ $('.about-team__right').slick({
 
 
 //------------------------------------------Вызов модального окна заказа
+
 $('.close-btn').click(function(){
     $('.order-box').fadeOut();
     $('.thanks-box').fadeOut();
@@ -104,18 +105,14 @@ $('.master__close-btn').click(function(){
 
 $('.team__slide').click(function(){
     $('.master-popup').fadeIn();
-    $('html').scrollTop(0);
-    $('.extra-wrapper').css('position','fixed');
 });
 
 $('.order-call').click(function(){
     $('.order-box').fadeIn();
-    $('.extra-wrapper').css('position','fixed');
 });
 
 $('.thanks__btn').click(function(){
     $('.thanks-box').fadeOut();
-    $('.extra-wrapper').css('position','inherit');
 });
 
 
