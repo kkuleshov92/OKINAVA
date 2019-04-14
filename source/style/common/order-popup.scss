@@ -45,6 +45,7 @@
         width: 470px;
     }
     &__right {
+
         img {
             vertical-align: top;
         }
@@ -149,6 +150,8 @@
             background: #ff1668;
         }
     }
+
+
     &__polit {
         font-size: 12px;
         margin-top: 7px;
@@ -396,4 +399,8 @@
             margin-top: 20px;
         }
     }
+}
+
+.ui-selectmenu-menu.ui-front.ui-selectmenu-open {
+    position: fixed !important;
 }

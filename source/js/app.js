@@ -105,14 +105,18 @@ $('.master__close-btn').click(function(){
 
 $('.team__slide').click(function(){
     $('.master-popup').fadeIn();
+    // $('html').scrollTop(0);
+    // $('.extra-wrapper').css('position','absolute');
 });
 
 $('.order-call').click(function(){
     $('.order-box').fadeIn();
+    $('.extra-wrapper').css('position','absolute');
 });
 
 $('.thanks__btn').click(function(){
     $('.thanks-box').fadeOut();
+    $('.extra-wrapper').css('position','absolute');
 });
 
 
