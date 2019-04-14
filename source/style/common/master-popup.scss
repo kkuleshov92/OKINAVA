@@ -1,12 +1,12 @@
 .master-popup {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     display: none;
-    overflow: scroll;
 }
 
 .master {

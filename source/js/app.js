@@ -112,6 +112,7 @@ $('.team__slide').click(function(){
     let $window = $(window);
     let countPx = -$window.scrollTop() + 'px';
     $('.extra-wrapper').css('position','fixed').css('top', countPx);
+    $(window).scrollTop();
 });
 
 $('.staff__item').click(function(){
