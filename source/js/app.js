@@ -114,6 +114,13 @@ $('.team__slide').click(function(){
     $('.extra-wrapper').css('position','fixed').css('top', countPx);
 });
 
+$('.staff__item').click(function(){
+    $('.master-popup').fadeIn();
+    let $window = $(window);
+    let countPx = -$window.scrollTop() + 'px';
+    $('.extra-wrapper').css('position','fixed').css('top', countPx);
+});
+
 $('.order-call').click(function(){
     $('.order-box').fadeIn();
     let $window = $(window);
