@@ -362,5 +362,14 @@
                 width: 100%;
             }
         }
+        &__insert {
+            width: 100%;
+            margin-top: 15px;
+        }
+        &__quotes {
+            &::before, &::after {
+                display: none;
+            }
+        }
     }
 }

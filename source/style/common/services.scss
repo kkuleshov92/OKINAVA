@@ -71,6 +71,11 @@
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
+
+    &:hover {
+      color: #fff;
+      background: #88c524;
+    }
   }
 }
 //-------------------------------MEDIA

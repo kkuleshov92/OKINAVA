@@ -136,7 +136,43 @@ $('.thanks__btn').click(function(){
     $('html').animate({ scrollTop: extraWrTop }, 0);
     $('.extra-wrapper').css('position','inherit');
 });
+jQuery(function($){
+    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+        var block = $(".order-box"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+        if (block.is(e.target) // проверка условия если клик был не по нашему блоку
+          ) { // проверка условия если клик не по его дочерним элементам
+            block.fadeOut();
+            let extraWrTop = (+($('.extra-wrapper').css('top').slice(0, -2)) * -1) + 'px';
+            $('html').animate({ scrollTop: extraWrTop }, 0);
+            $('.extra-wrapper').css('position','inherit');// если условия выполняются - скрываем наш элемент
+        }
+    });
 
+});
+jQuery(function($){
+    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+        var block = $(".master-popup"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+        if (block.is(e.target) // проверка условия если клик был не по нашему блоку
+          ) { // проверка условия если клик не по его дочерним элементам
+            block.fadeOut();
+            let extraWrTop = (+($('.extra-wrapper').css('top').slice(0, -2)) * -1) + 'px';
+            $('html').animate({ scrollTop: extraWrTop }, 0);
+            $('.extra-wrapper').css('position','inherit');// если условия выполняются - скрываем наш элемент
+        }
+    });
+});
+jQuery(function($){
+    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+        var block = $(".thanks-box"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+        if (block.is(e.target) // проверка условия если клик был не по нашему блоку
+          ) { // проверка условия если клик не по его дочерним элементам
+            block.fadeOut();
+            let extraWrTop = (+($('.extra-wrapper').css('top').slice(0, -2)) * -1) + 'px';
+            $('html').animate({ scrollTop: extraWrTop }, 0);
+            $('.extra-wrapper').css('position','inherit');// если условия выполняются - скрываем наш элемент
+        }
+    });
+});
 
 //---------------------------прилипание картинки услуги
 var url= window.location.href; // будет работать только на странице с адресом 'services.html'
