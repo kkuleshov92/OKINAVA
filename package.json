@@ -28,7 +28,7 @@
   "dependencies": {
     "bower": "^1.8.4",
     "gulp-cli": "^2.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "node.extend": "^2.0.2",
     "normalize.css": "^8.0.0",
     "python": "0.0.4",
